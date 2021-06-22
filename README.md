@@ -14,6 +14,8 @@ This project displays all the information related Covid-19. Like from Cases, His
 
 # API
 
+** https://github.com/M-Media-Group/Covid-19-API
+
 https://covid-api.mmediagroup.fr/v1/cases?country=(Country Name/State Name)
 
 # Data Sample: 
