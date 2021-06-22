@@ -83,13 +83,15 @@ https://covid-api.mmediagroup.fr/v1/cases?country=(Country Name/State Name)
 - Get the project API and add axios API call to find and use data from the COVID API database. 
 - Create a base frame for the project using HTML CSS and JS
 - Allow user to search for the latest information.
-- Render Cases, History and Vaccination information.
+- Render Vaccination information.
+- Adding media query.
 - Add styling in CSS, include Flexbox or Grid styling.
 - Remove previous search results for new search. 
 
 #### PostMVP  
 
 - Add graphical representation for the information searched.
+- Render search images, cases and history info.
 - Allow user to scroll back to the top of the page by single click.
 
 ## Project Schedule
@@ -99,8 +101,8 @@ https://covid-api.mmediagroup.fr/v1/cases?country=(Country Name/State Name)
 |June 21| Prompt / Wireframes / Priority Matrix / Timeframes | Complete
 |June 22| Project Approval / Core Application Structure (HTML, CSS, etc.) | Incomplete
 |June 23| Pseudocode / actual code | Incomplete
-|June 24| Initial Clickable Model  | Incomplete
-|June 25| MVP | Incomplete
+|June 24| MVP  | Incomplete
+|June 25| PMVP and advance styling | Incomplete
 |June 28| Presentations | Incomplete
 
 ## Priority Matrix
@@ -113,15 +115,16 @@ https://covid-api.mmediagroup.fr/v1/cases?country=(Country Name/State Name)
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
 | Create HTML/CSS and basic structure| H | 4hrs| -hrs | -hrs |
-| Pseudocode JS sheet | H | 5hrs | -hrs | -hrs |
+| DOM Implimentation | H | 2hrs | -hrs | -hrs |
+| JS actual code | H | 3hrs | -hrs | -hrs |
 | Working with API | H | 3hrs| -hrs | -hrs |
-| Appending Info to DOM | H | 3hrs | -hrs | -hrs |
+| Appending Info to DOM | H | 4hrs | -hrs | -hrs |
 | Navigations | H | 4hrs | -hrs | -hrs |
 | Creating Search Bar | H | 4hrs | -hrs | -hrs |
 | Responsive web desiging | H | 5hrs | -hrs | -hrs |
 | CSS Styling | H | 6hrs | -hrs | -hrs |
 | Review of Functionality | H | 3hrs | -hrs | -hrs |
-| Total | H | 37hrs| -hrs | -hrs |
+| Total | H | 38hrs| -hrs | -hrs |
 
 ## Code Snippet
 
