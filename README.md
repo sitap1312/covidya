@@ -116,15 +116,15 @@ https://covid-api.mmediagroup.fr/v1/cases?country=(Country Name/State Name)
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Create HTML/CSS and basic structure| H | 4hrs| 2hrs | 2hrs |
+| Create HTML/CSS and basic structure| H | 4hrs| 3hrs | 3hrs |
 | DOM Implimentation | H | 2hrs | 1.5hrs | 1.5hrs |
-| JS actual code | H | 3hrs | 3hrs | 3hrs |
-| Working with API | H | 3hrs| -hrs | -hrs |
-| Appending Info to DOM | H | 4hrs | -hrs | -hrs |
-| Navigations | H | 4hrs | -hrs | -hrs |
-| Creating Search Bar | H | 4hrs | -hrs | -hrs |
+| JS actual code | H | 3hrs | 4hrs | 4hrs |
+| Working with API | H | 3hrs| 2hrs | 2hrs |
+| Appending Info to DOM | H | 4hrs | 3hrs | 3hrs |
+| Navigations | H | 4hrs | 2hrs | 2hrs |
+| Creating Search Bar | H | 4hrs | 3.5hrs | 3.5hrs |
 | Responsive web desiging | H | 5hrs | -hrs | -hrs |
-| CSS Styling | H | 6hrs | -hrs | -hrs |
+| CSS Styling | H | 6hrs | 6.5hrs | 6.5hrs |
 | Review of Functionality | H | 3hrs | -hrs | -hrs |
 | Total | H | 38hrs| -hrs | -hrs |
 
