@@ -130,11 +130,15 @@ https://covid-api.mmediagroup.fr/v1/cases?country=(Country Name/State Name)
 
 ## Code Snippet
 
-Use this section to include a brief code snippet of functionality that you are proud of and a brief description.  
+Adding 2nd API to get more info. 
 
 ```
-function reverse(string) {
-	// here is the code to reverse a string of text
+async function displayVaccineData(vaccine) {
+  try {
+    const res = await axios.get(`https://covid-api.mmediagroup.fr/v1/vaccines?country=${searchVaccInput.value}`)
+    removeOldData(vaccineData);
+    const vaccList = res.data.All;
+    console.log(vaccList);
 }
 ```
 
