@@ -12,27 +12,33 @@
 </head>
 
 <body>
+  <!-- <button onclick="scrollTop()" id="homeBtn" title="Go to Top">HOME</button> -->
+<!-- Header -->
   <header id="header">
-    <img src="/Users/madhu/Desktop/covidya.png" alt="covid">
-    <h1>COVIDYA</h1>
+    <a href="./index.html">
+      <img src="/Users/madhu/Desktop/covidya.png" alt="covid">
+    </a>
+    <a href="./index.html"><h1>COVIDYA</h1></a>
     <ul>
       <li>
         <a href="#header">HOME</a>
       </li>
       <li>
-        <a href="#">COVID-19</a>
+        <a href="#covid-info">COVID-19</a>
       </li>
       <li>
         <a href="#search-section">CASES</a>
       </li>
       <li>
-        <a href="">HISTORY</a>
+        <a href="#vaccine-pg">VACCINATIONS</a>
       </li>
       <li>
-        <a href="">VACCINATION</a>
+        <a href="#WHO-info">WHO Guide</a>
       </li>
     </ul>
   </header>
+
+<!-- Main Section -->
   <main>
     <section id="intro">
       <div class="intro-msg">
@@ -49,6 +55,8 @@
     </section>
     <br>
     <br>
+
+<!-- Search section for CASES -->
     <section id="search-section">
       <h2>Please search here for cases around the world..</h2>
       <div>
@@ -56,12 +64,52 @@
         <button id="search-button" type="submit">Search</button>
       </div>
     </section>
-  
+  <!-- Getting info from API -->
     <section id="data-list">
       <div class="data-container">
       </div>
     </section>
+    <br>
+
+<!-- A section for COVID Info -->
+    <section id="covid-info">
+      <div>
+        <h1>Get more information on COVID</h1>
+        <a href='https://www.cdc.gov/dotw/covid-19/index.html'><button>Read more on CDC Guide</button></a>
+      </div>
+    </section>
+    <br>
+
+<!-- A section for Vaccine Info -->
+    <div id="vaccine-pg"></div> 
+    <section id="search-section">
+      <h2>Search here for Vaccination Information around the World..</h2>
+      <h3>Get information on Vaccines like Country, Capital, No. of people Vaccinated, 
+        No. of people that are partially Vaccinated and total Administered..
+      </h3>
+      <div>
+        <input id="search-vacc-Input" type="text" placeholder="Search here...">
+        <button id="search-vacc-button" type="submit">Search</button>
+      </div>
+    </section>
+    <!-- Getting Info from API -->
+    <section id="vaccine-info">
+      <div class="vaccine-data">
+      </div>
+    </section>
+
+<!-- A section for WHO recommendations -->
+    <section id="WHO-info">
+      <div>
+        <h1>Stay home.. Stay safe..</h1>
+        <a href='https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public'><button>Read more on WHO Guide</button></a>
+      </div>
+    </section>
+    <br>
   </main>
+  <br>  
+
+<!-- Footer -->
   <footer>
     <p>
       @ SitaPaballa 2021 <br>
