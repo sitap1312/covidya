@@ -1,3 +1,28 @@
+li {
+  display:inline;
+  padding: 0px 20px 0px 20px;
+}
+ul {
+  text-align: right;
+}
+
+a {
+  color:crimson;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+span {
+  color: crimson;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color:rgb(173, 132, 132);
+  color: black;
+}
+
 #header img {
   float: left;
   margin-left: 50px;
@@ -20,34 +45,25 @@
   border: 1px solid black;
   background-color:rgb(185, 101, 118);
   padding: 5px;
-  margin-left: 5px;
+  /* margin-left: 5px; */
 }
 
-.search-section {
-  margin-left: 200px;
-  display: flex;
-}
-
-.data-list {
+#data-list {
   padding-left: 30px;
+  /* flex-direction: column-reverse; */
 }
 
-
-li {
-  display:inline;
-  padding: 0px 20px 0px 20px;
-}
-ul {
-  text-align: right;
+#search-section div {
+  display: flexbox;
+  text-align: center;
 }
 
-a {
-  color:crimson;
-  font-size: 20px;
-  text-decoration: none;
+#search-section h2 {
+  color: darkred;
+  text-align: center;
 }
 
-.intro {
+#intro {
   background: url("http://stories.uh.edu/covid-19/assets/ag2dSlL11z/covidbackground05-2560x1440.jpeg");
   height: 600px;
   background-repeat: no-repeat;
@@ -55,19 +71,15 @@ a {
   /* opacity: 0.5; */
 }
 
-.intro section {
+.intro-msg {
   border: black 2px solid;
   border-radius: 10%;
-  padding-left: 15px;
-  align-items: center;
-  float: left;
-  margin-top: 200px;
-  margin-left: 100px;
+  margin-left: 300px;
+  padding-left: 20px;
   height: auto;
   width: 600px;
   color:black;
-}
-
-span {
-  color: crimson;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }

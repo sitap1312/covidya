@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,52 +10,65 @@
   <script defer src="./app.js"></script>
   <title>Covid-19</title>
 </head>
+
 <body>
   <header id="header">
     <img src="/Users/madhu/Desktop/covidya.png" alt="covid">
     <h1>COVIDYA</h1>
-      <ul>
-        <li>
-          <a href="#header">HOME</a>
-        </li>
-        <li>
-          <a href="#">COVID-19</a>
-        </li>
-        <li>
-          <a href="">CASES</a>
-        </li>
-        <li>
-          <a href="">HISTORY</a>
-        </li>
-        <li>
-          <a href="">VACCINATION</a>
-        </li>
-      </ul>
+    <ul>
+      <li>
+        <a href="#header">HOME</a>
+      </li>
+      <li>
+        <a href="#">COVID-19</a>
+      </li>
+      <li>
+        <a href="#search-section">CASES</a>
+      </li>
+      <li>
+        <a href="">HISTORY</a>
+      </li>
+      <li>
+        <a href="">VACCINATION</a>
+      </li>
+    </ul>
   </header>
-  <br>
-  <div class="search-section">
-    <input id="user-input-bar" type="text" placeholder="Search here...">
-    <button id="search-button" type="submit">Search</button>
-  </div>
-  <br>
-<div class="intro">
-  <section>
-    <h2>
-      There's <span>178,896,869</span> confirmed cases of Coronavirus around the world today. <br><br>
-      Since last week, that's an increase of <span>2,421,615</span> cases, or 1%. <br> <br> 
-      Only cases tested in a laboratory are counted; with news of sketchy reporting and others staying at home, there's more cases out there. <br> 
-      <span>
-        <h3>Stay home and stay safe. Please be masked..</h3>
-      </span> 
-    </h2>
-  </section>
-</div>
-<br>
-<section class="data-list">
-  <h2>Current Data...</h2>
-</section>
-
-    
+  <main>
+    <section id="intro">
+      <div class="intro-msg">
+        <h2>
+          There's <span>178,896,869</span> confirmed cases of Coronavirus around the world today. <br><br>
+          Since last week, that's an increase of <span>2,421,615</span> cases, or 1%. <br> <br>
+          Only cases tested in a laboratory are counted; with news of sketchy reporting and others staying at home,
+          there's more cases out there. <br>
+        </h2>
+        <span>
+          <h2>Stay home and stay safe. Please be masked..</h2>
+        </span>
+      </div>
+    </section>
+    <br>
+    <br>
+    <section id="search-section">
+      <h2>Please search here for cases around the world..</h2>
+      <div>
+        <input id="user-input-bar" type="text" placeholder="Search here...">
+        <button id="search-button" type="submit">Search</button>
+      </div>
+    </section>
   
+    <section id="data-list">
+      <div class="data-container">
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>
+      @ SitaPaballa 2021 <br>
+      <a href="https://www.linkedin.com/in/sita-pataballa-41963b206" style="color: black;">LinkedIn</a>
+    </p>
+  </footer>
+
 </body>
+
 </html>
