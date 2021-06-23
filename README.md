@@ -117,8 +117,8 @@ https://covid-api.mmediagroup.fr/v1/cases?country=(Country Name/State Name)
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
 | Create HTML/CSS and basic structure| H | 4hrs| 2hrs | 2hrs |
-| DOM Implimentation | H | 2hrs | -hrs | -hrs |
-| JS actual code | H | 3hrs | -hrs | -hrs |
+| DOM Implimentation | H | 2hrs | 1.5hrs | 1.5hrs |
+| JS actual code | H | 3hrs | 3hrs | 3hrs |
 | Working with API | H | 3hrs| -hrs | -hrs |
 | Appending Info to DOM | H | 4hrs | -hrs | -hrs |
 | Navigations | H | 4hrs | -hrs | -hrs |
