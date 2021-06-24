@@ -6,61 +6,6 @@ ul {
   text-align: right;
 }
 
-@media only screen and (max-width: 600px) {
-  ul a {
-    text-align: center;
-    display: block;
-  }
-
-  #header img {
-    /* text-align: center; */
-    display: block;
-  }
-
-  #header h1 {
-    text-align: center;
-    display: block;
-  }
-
-  #intro img {
-    height: 200px;
-    background-size: cover;
-  }
-
-  #intro a span {
-    height: 50px;
-    margin-top: -250px;
-    left: 250px;
-  }
-
-  .intro-msg h2 {
-    /* text-align: center; */
-    font-size: medium;
-  }
-
-  #intro {
-    height: 500px;
-    width: 100px;
-  }
-
-  .intro-msg {
-    width: 100px;
-    margin-bottom: 200px;
-    /* padding: 0;
-    height: 600px; */
-  }
-
-  #vaccine-info a span {
-    height: 50px;
-    margin-top: 90px;
-    right: 50px;
-  }
-
-}
-
-
-
-
 a {
   color:crimson;
   font-size: 20px;
@@ -170,14 +115,6 @@ footer a {
   height: 400px;
   width: 100vw;
 }
-
-/* #search-section {
-  background-color: ivory;
-  padding-left: 30px;
-  height: 500px;
-  width: 100vw;
-  width: auto;
-} */
 
 #search-section div {
   display: flexbox;
@@ -414,4 +351,57 @@ footer a {
 
 .to-top:hover:before {
   transform: rotate(360deg);
+}
+
+/* media queries for responsive design */
+
+@media only screen and (max-width: 600px) {
+  ul a {
+    text-align: center;
+    display: block;
+  }
+
+  #header img {
+    display: block;
+  }
+
+  #header h1 {
+    text-align: center;
+    display: block;
+  }
+
+  #intro img {
+    /* height: 200px; */
+    width: 500px;
+    background-size: cover;
+  }
+
+  #intro a span {
+    height: 50px;
+    margin-top: -250px;
+    left: 250px;
+  }
+
+  .intro-msg h2 {
+    text-align: center;
+    font-size: medium;
+  }
+
+  /* #intro {
+    height: 500px;
+    width: 100px;
+  } */
+
+  .intro-msg {
+    width: 500px;
+    margin-bottom: 100px;
+    height: auto;
+  }
+
+  #vaccine-info a span {
+    height: 50px;
+    margin-top: 90px;
+    right: 50px;
+  }
+
 }
