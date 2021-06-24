@@ -34,11 +34,11 @@ async function displayCurrentData(country) {
     const dataList = response.data.All;
     console.log(dataList);
 
-    const countryName = document.createElement('h2');
+    const countryName = document.createElement('h1');
     countryName.textContent = `Country: ${dataList.country}`;
     dataContainer.appendChild(countryName);
 
-    const countryCapital = document.createElement('h3');
+    const countryCapital = document.createElement('h2');
     countryCapital.textContent = `Capital: ${dataList.capital_city}`;
     dataContainer.appendChild(countryCapital);
 
@@ -81,11 +81,11 @@ async function displayVaccineData(vaccine) {
     const vaccList = res.data.All;
     console.log(vaccList);
 
-    const countryName = document.createElement('h2');
+    const countryName = document.createElement('h1');
     countryName.textContent = `Country: ${vaccList.country}`;
     vaccineData.appendChild(countryName);
 
-    const countryCapital = document.createElement('h3');
+    const countryCapital = document.createElement('h2');
     countryCapital.textContent = `Capital: ${vaccList.capital_city}`;
     vaccineData.appendChild(countryCapital);
 
@@ -118,22 +118,24 @@ function removeOldData(element) {
   }
 }
 
-// //Function to scroll Top of the page button
+//Function to scroll Top of the page button
 
-// const homeButton = document.getElementById('#home')
+// ***** Got help through google search *****
 
-// //When the user scrolls down 20px from the top of the document, show the button
-// window.onscroll = function () {
-//   scrollHome()
-// }
+const homeButton = document.querySelector('.to-top')
 
-// function scrollHome() {
-//   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-//     homeButton.style.display = "block";
-//   } else {
-//     homeButton.style.display = "none";
-//   }
-// }
+//When the user scrolls down 250px from the top of the document, show the button
+window.onscroll = function () {
+  scrollHome()
+}
+
+function scrollHome() {
+  if (document.body.scrollTop > 250 || document.documentElement.scrollTop > 250) {
+    homeButton.style.display = "block";
+  } else {
+    homeButton.style.display = "none";
+  }
+}
 
 // //When the user clicks on the button, scroll to the top of the document
 // function topScroll() {
