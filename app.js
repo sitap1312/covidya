@@ -27,7 +27,8 @@ function search() {
   // userInput.value = userInput.value.toLowerCase();
   // userInput.value = userInput.value[0].toUpperCase() + userInput.value.substring(1, userInput.length);
   // console.log(userInput.value);
-
+  
+  // caseSensitive(userInput);
   displayCurrentData(userInput)
   console.log(userInput.value);
 }
@@ -71,6 +72,15 @@ async function displayCurrentData(country) {
     console.error(error);
   }
 }
+
+// //function for case sensitive
+// function caseSensitive() {
+//   displayCurrentData();
+//   let input = userInput.value;
+//   let output = input.match(dataList.country);
+//   console.log(output);
+//   return output;
+// }
 
 
 // Adding event listener when user clicks search button - Vaccines
