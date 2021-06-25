@@ -127,10 +127,6 @@ footer a {
   /* padding-top: 60px; */
 }
 
-/* #search-section {
-  background-color:ivory;
-} */
-
 #search-section a span {
   position:absolute;
   height: 50px;
@@ -214,10 +210,8 @@ footer a {
 }
 
 #vacc-search-section h2, h3 {
-  color:rgb(49, 48, 48);
+  color:darkred;
   text-align: center;
-  /* margin-top: 10px; */
-  /* margin-left: 200px; */
 }
 
 #vaccine-info a span {
@@ -249,8 +243,6 @@ footer a {
   padding: 5px;
   width: 380px;
   border-radius: 10px;
-  /* display: inline-block;
-  margin: 0 auto; */
 }
 
 #search-vacc-button {
@@ -261,8 +253,6 @@ footer a {
   border-radius: 10px;
   width: 100px;
   cursor: pointer;
-  /* display: inline-block;
-  margin: 0 auto; */
 }
 
 #search-vacc-button:hover {
@@ -362,12 +352,15 @@ footer a {
   }
 
   #header img {
-    display: block;
+    /* display: block; */
+    margin-right: -20;
+    /* float: none; */
   }
 
   #header h1 {
     text-align: center;
-    display: block;
+    /* display: block; */
+    /* margin-left: -20px; */
   }
 
   #intro img {
@@ -379,18 +372,13 @@ footer a {
   #intro a span {
     height: 50px;
     margin-top: -250px;
-    left: 250px;
+    /* left: 300px; */
   }
 
   .intro-msg h2 {
     text-align: center;
     font-size: medium;
   }
-
-  /* #intro {
-    height: 500px;
-    width: 100px;
-  } */
 
   .intro-msg {
     width: 500px;
