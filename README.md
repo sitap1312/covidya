@@ -92,7 +92,7 @@ https://covid-api.mmediagroup.fr/v1/cases?country=(Country Name/State Name)
 
 #### PostMVP  
 
-- Add graphical representation for the information searched.
+- Allow user to scroll down to each section by button click.
 - Render search images, cases and history info.
 - Allow user to scroll back to the top of the page by single click.
 
@@ -118,15 +118,16 @@ https://covid-api.mmediagroup.fr/v1/cases?country=(Country Name/State Name)
 | --- | :---: |  :---: | :---: | :---: |
 | Create HTML/CSS and basic structure| H | 4hrs| 3hrs | 3hrs |
 | DOM Implimentation | H | 2hrs | 1.5hrs | 1.5hrs |
-| JS actual code | H | 3hrs | 4hrs | 4hrs |
+| JS actual code | H | 3hrs | 3hrs | 3hrs |
 | Working with API | H | 3hrs| 2hrs | 2hrs |
-| Appending Info to DOM | H | 4hrs | 3hrs | 3hrs |
-| Navigations | H | 4hrs | 2hrs | 2hrs |
-| Creating Search Bar | H | 4hrs | 3.5hrs | 3.5hrs |
-| Responsive web desiging | H | 5hrs | -hrs | -hrs |
+| Appending Info to DOM | H | 4hrs | 2hrs | 2hrs |
+| Navigations | H | 4hrs | 3hrs | 3hrs |
+| Creating Search Bar | H | 4hrs | 2hrs | 2hrs |
+| Responsive web desiging | H | 5hrs | 5hrs | 5hrs |
 | CSS Styling | H | 6hrs | 6.5hrs | 6.5hrs |
-| Review of Functionality | H | 3hrs | -hrs | -hrs |
-| Total | H | 38hrs| -hrs | -hrs |
+| PMVP Styling | H | 2hr | 2hrs | 2hrs |
+| Review of Functionality | H | 3hrs | 2hrs | 2hrs |
+| Total | H | 40hrs| 32hrs | 32hrs |
 
 ## Code Snippet
 
