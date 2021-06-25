@@ -5,22 +5,29 @@
 
 // Global variables
 const searchSection = document.querySelector('#search-section');
-const userInput = document.querySelector('#user-input-bar');
+let userInput = document.querySelector('#user-input-bar');
 const searchButton = document.querySelector('#search-button');
 const displayData = document.querySelector('#data-list');
 const dataContainer = document.querySelector('.data-container')
 
 //Global variables for 2nd API
-const searchVaccInput = document.querySelector('#search-vacc-Input');
+let searchVaccInput = document.querySelector('#search-vacc-Input');
 const searchVaccButton = document.querySelector('#search-vacc-button');
 const vaccineInfo = document.querySelector('#vaccine-info');
 const vaccineData = document.querySelector('.vaccine-data')
 
 
 // Adding event listener when user clicks search button - cases
+
 searchButton.addEventListener('click', search);
 
+
 function search() {
+
+  userInput.value = userInput.value.toLowerCase();
+  userInput.value = userInput.value[0].toUpperCase() + userInput.value.substring(1, userInput.length);
+  console.log(userInput.value);
+  
   displayCurrentData(userInput)
   console.log(userInput.value);
 }
@@ -33,6 +40,7 @@ async function displayCurrentData(country) {
     removeOldData(dataContainer);
     const dataList = response.data.All;
     console.log(dataList);
+    console.log(response);
 
     const countryName = document.createElement('h1');
     countryName.textContent = `Country: ${dataList.country}`;
@@ -64,10 +72,16 @@ async function displayCurrentData(country) {
   }
 }
 
+
 // Adding event listener when user clicks search button - Vaccines
 searchVaccButton.addEventListener('click', searchVacc);
 
 function searchVacc() {
+  
+  searchVaccInput.value = searchVaccInput.value.toLowerCase();
+  searchVaccInput.value = searchVaccInput.value[0].toUpperCase() + searchVaccInput.value.substring(1, searchVaccInput.length);
+  console.log(searchVaccInput.value);
+
   displayVaccineData(searchVaccInput)
   console.log(searchVaccInput.value);
 }
