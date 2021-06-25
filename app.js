@@ -24,10 +24,10 @@ searchButton.addEventListener('click', search);
 
 function search() {
 
-  userInput.value = userInput.value.toLowerCase();
-  userInput.value = userInput.value[0].toUpperCase() + userInput.value.substring(1, userInput.length);
-  console.log(userInput.value);
-  
+  // userInput.value = userInput.value.toLowerCase();
+  // userInput.value = userInput.value[0].toUpperCase() + userInput.value.substring(1, userInput.length);
+  // console.log(userInput.value);
+
   displayCurrentData(userInput)
   console.log(userInput.value);
 }
@@ -77,10 +77,10 @@ async function displayCurrentData(country) {
 searchVaccButton.addEventListener('click', searchVacc);
 
 function searchVacc() {
-  
-  searchVaccInput.value = searchVaccInput.value.toLowerCase();
-  searchVaccInput.value = searchVaccInput.value[0].toUpperCase() + searchVaccInput.value.substring(1, searchVaccInput.length);
-  console.log(searchVaccInput.value);
+
+  // searchVaccInput.value = searchVaccInput.value.toLowerCase();
+  // searchVaccInput.value = searchVaccInput.value[0].toUpperCase() + searchVaccInput.value.substring(1, searchVaccInput.length);
+  // console.log(searchVaccInput.value);
 
   displayVaccineData(searchVaccInput)
   console.log(searchVaccInput.value);
