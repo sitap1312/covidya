@@ -144,4 +144,20 @@ async function displayVaccineData(vaccine) {
 ```
 
 ## Change Log
- Use this section to document what changes were made and the reasoning behind those changes.  
+ ```
+ async function displayCurrentData(country) {
+  try {
+    const response = await axios.get(`https://covid-api.mmediagroup.fr/v1/cases?country=${userInput.value}`)
+    const res = await axios.get(`https://covid-api.mmediagroup.fr/v1/vaccines?country=${userInput.value}`)
+    removeOldData(dataContainer);
+    // removeOldData(vaccineData);
+    
+    let dataList = response.data.All;
+    let vaccList = res.data.All;
+
+    let totalList = {
+      dataList: response.data.All,
+      vaccList: res.data.All
+    }
+    ```
+    Removed 2 search bar for cases and vaccine information and made them into single search unit by calling 2 different API's.
