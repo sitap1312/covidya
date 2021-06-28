@@ -12,12 +12,14 @@
 </head>
 
 <body>
-<!-- Header -->
+  <!-- Header -->
   <header id="header">
     <a href="./index.html">
       <img src="/Users/madhu/Desktop/covidya.png" alt="covid">
     </a>
-    <a href="./index.html"><h1>COVIDYA</h1></a>
+    <a href="./index.html">
+      <h1>COVIDYA</h1>
+    </a>
     <ul>
       <li>
         <a href="./index.html">HOME</a>
@@ -29,7 +31,7 @@
         <a href="#search-section">CASES</a>
       </li>
       <li>
-        <a href="#vacc-search-section">VACCINATIONS</a>
+        <a href="#search-section">VACCINATIONS</a>
       </li>
       <li>
         <a href="#WHO-info">WHO Guide</a>
@@ -37,7 +39,7 @@
     </ul>
   </header>
 
-<!-- Main Section -->
+  <!-- Main Section -->
   <main>
     <section id="intro">
       <div class="intro-msg">
@@ -56,55 +58,39 @@
     <br>
     <br>
 
-<!-- Search section for CASES -->
+    <!-- Search section for CASES and Vacc Info -->
     <section id="search-section">
-      <h2>Please search here for cases around the world..</h2>
+      <h2>Search here for Cases and Vaccination Information around the World..</h2>
       <div>
-          <input id="user-input-bar" type="text" placeholder="Search here..."/>
-          <button id="search-button" type="submit">Search</button>
+        <input id="user-input-bar" type="text" placeholder="Search here..." />
+        <button id="search-button" type="submit">Search</button>
       </div>
       <a href="#covid-info"> <span>Scroll Down</span> </a>
-  <!-- Getting info from API -->
+      
+      <!-- Getting info from API -->
       <div id="data-list">
         <div class="data-container">
         </div>
       </div>
-  </section>
+    </section>
     <br>
 
-<!-- A section for COVID Info -->
+    <!-- A section for COVID Info -->
     <section id="covid-info">
       <div>
         <h1>Get more information on COVID</h1>
         <a href='https://www.cdc.gov/dotw/covid-19/index.html'><button>Read more on CDC Guide</button></a>
       </div>
-      <a href="#vacc-search-section"> <span>Scroll Down</span> </a>
+      <a href="#WHO-info"> <span>Scroll Down</span> </a>
     </section>
     <br>
 
-<!-- A section for Vaccine Info -->
-    <section id="vacc-search-section">
-      <h2>Search here for Vaccination Information around the World..</h2>
-      <h3>Get information on Vaccines like Country, Capital, No. of people Vaccinated, 
-        No. of people that are partially Vaccinated and total Administered..
-      </h3>
-      <div>
-        <input id="search-vacc-Input" type="text" placeholder="Search here...">
-        <button id="search-vacc-button" type="submit">Search</button>
-      </div>
-    </section>
-    <!-- Getting Info from API -->
-    <section id="vaccine-info">
-      <div class="vaccine-data">
-      </div>
-      <a href="#WHO-info"> <span>Scroll Down</span> </a>
-    </section>
-
-<!-- A section for WHO recommendations -->
+    <!-- A section for WHO recommendations -->
     <section id="WHO-info">
       <div>
         <h1>Stay home.. Stay safe..</h1>
-        <a href='https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public'><button>Read more on WHO Guide</button></a>
+        <a href='https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public'><button>Read more on
+            WHO Guide</button></a>
       </div>
     </section>
     <br>
@@ -113,7 +99,7 @@
   <br>
   <a href="./index.html" class="to-top"></a>
 
-<!-- Footer -->
+  <!-- Footer -->
   <footer>
     <p>
       @ SitaPaballa 2021 <br>

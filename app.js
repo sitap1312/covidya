@@ -10,12 +10,6 @@ const searchButton = document.querySelector('#search-button');
 const displayData = document.querySelector('#data-list');
 const dataContainer = document.querySelector('.data-container')
 
-//Global variables for 2nd API
-let searchVaccInput = document.querySelector('#search-vacc-Input');
-const searchVaccButton = document.querySelector('#search-vacc-button');
-const vaccineInfo = document.querySelector('#vaccine-info');
-const vaccineData = document.querySelector('.vaccine-data')
-
 
 // Adding event listener when user clicks search button - cases
 
@@ -29,6 +23,9 @@ function search() {
   // console.log(userInput.value);
 
   // caseSensitive(userInput);
+  // displayCurrentData(userInput)
+  // displayCurrentData(searchVaccInput)
+
   displayCurrentData(userInput)
   console.log(userInput.value);
 }
@@ -38,17 +35,30 @@ function search() {
 async function displayCurrentData(country) {
   try {
     const response = await axios.get(`https://covid-api.mmediagroup.fr/v1/cases?country=${userInput.value}`)
+    const res = await axios.get(`https://covid-api.mmediagroup.fr/v1/vaccines?country=${userInput.value}`)
     removeOldData(dataContainer);
-    const dataList = response.data.All;
-    console.log(dataList);
-    console.log(response);
+    // removeOldData(vaccineData);
+    
+    let dataList = response.data.All;
+    let vaccList = res.data.All;
+
+    let totalList = {
+      dataList: response.data.All,
+      vaccList: res.data.All
+    }
+
+    console.log(totalList);
+    // console.log(dataList);
+    // console.log(vaccList);
+    // console.log(res);
+    // console.log(response);
 
     const countryName = document.createElement('h1');
-    countryName.textContent = `Country: ${dataList.country}`;
+    countryName.textContent = `Country: ${totalList.dataList.country}`;
     dataContainer.appendChild(countryName);
 
     const countryCapital = document.createElement('h2');
-    countryCapital.textContent = `Capital: ${dataList.capital_city}`;
+    countryCapital.textContent = `Capital: ${totalList.dataList.capital_city}`;
     dataContainer.appendChild(countryCapital);
 
     const confirmCases = document.createElement('h4');
@@ -67,6 +77,24 @@ async function displayCurrentData(country) {
     lastUpdated.textContent = `Last Updated: ${dataList.updated}`;
     dataContainer.appendChild(lastUpdated);
 
+// Vaccination info append
+
+    const peopleVaccinated = document.createElement('h3');
+    peopleVaccinated.textContent = `Total Vaccinated: ${totalList.vaccList.people_vaccinated}`;
+    dataContainer.appendChild(peopleVaccinated);
+
+    const peoplePartiallyVaccinated = document.createElement('h4');
+    peoplePartiallyVaccinated.textContent = `Partially Vaccinated: ${totalList.vaccList.people_partially_vaccinated}`;
+    dataContainer.appendChild(peoplePartiallyVaccinated);
+
+    const administered = document.createElement('h4');
+    administered.textContent = `Administered: ${totalList.vaccList.administered}`;
+    dataContainer.appendChild(administered);
+
+    const updated = document.createElement('h4');
+    updated.textContent = `Last Updated: ${totalList.vaccList.updated}`;
+    dataContainer.appendChild(updated);
+
 
   } catch (error) {
     console.error(error);
@@ -82,58 +110,6 @@ async function displayCurrentData(country) {
 //   return output;
 // }
 
-
-// Adding event listener when user clicks search button - Vaccines
-searchVaccButton.addEventListener('click', searchVacc);
-
-function searchVacc() {
-
-  // searchVaccInput.value = searchVaccInput.value.toLowerCase();
-  // searchVaccInput.value = searchVaccInput.value[0].toUpperCase() + searchVaccInput.value.substring(1, searchVaccInput.length);
-  // console.log(searchVaccInput.value);
-
-  displayVaccineData(searchVaccInput)
-  console.log(searchVaccInput.value);
-}
-
-//function call - API for Vaccines around the world..
-
-async function displayVaccineData(vaccine) {
-  try {
-    const res = await axios.get(`https://covid-api.mmediagroup.fr/v1/vaccines?country=${searchVaccInput.value}`)
-    removeOldData(vaccineData);
-    const vaccList = res.data.All;
-    console.log(vaccList);
-
-    const countryName = document.createElement('h1');
-    countryName.textContent = `Country: ${vaccList.country}`;
-    vaccineData.appendChild(countryName);
-
-    const countryCapital = document.createElement('h2');
-    countryCapital.textContent = `Capital: ${vaccList.capital_city}`;
-    vaccineData.appendChild(countryCapital);
-
-    const peopleVaccinated = document.createElement('h4');
-    peopleVaccinated.textContent = `Total Vaccinated: ${vaccList.people_vaccinated}`;
-    vaccineData.appendChild(peopleVaccinated);
-
-    const peoplePartiallyVaccinated = document.createElement('h4');
-    peoplePartiallyVaccinated.textContent = `Partially Vaccinated: ${vaccList.people_partially_vaccinated}`;
-    vaccineData.appendChild(peoplePartiallyVaccinated);
-
-    const administered = document.createElement('h4');
-    administered.textContent = `Total Administered: ${vaccList.administered}`;
-    vaccineData.appendChild(administered);
-
-    const lastUpdated = document.createElement('h4');
-    lastUpdated.textContent = `Last Updated: ${vaccList.updated}`;
-    vaccineData.appendChild(lastUpdated);
-
-
-  } catch (error) {
-    console.error(error);
-  }
-}
 
 // function to remove last searched data from DOM
 function removeOldData(element) {

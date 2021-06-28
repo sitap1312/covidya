@@ -112,8 +112,12 @@ footer a {
 
 #data-list {
   padding-left: 30px;
-  height: 400px;
+  height: 500px;
   width: 100vw;
+}
+
+#search-section {
+  padding-top: 50px;
 }
 
 #search-section div {
@@ -137,7 +141,7 @@ footer a {
   font-size: small;
   text-align: center;
   right: 50px;
-  margin-top: 300px;
+  margin-top: 450px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -197,66 +201,6 @@ footer a {
 
 #covid-info button:hover {
   background-color: dodgerblue;
-}
-
-#vaccine-info {
-  height: 400px;
-  width: auto;
-}
-
-#vacc-search-section {
-  padding-top: 100px;
-  text-align: center;
-}
-
-#vacc-search-section h2, h3 {
-  color:darkred;
-  text-align: center;
-}
-
-#vaccine-info a span {
-  position:absolute;
-  height: 50px;
-  width: 50px;
-  border: 2px solid rgb(34, 33, 33);
-  border-radius: 20px;
-  box-sizing: border-box;
-  font-size: small;
-  text-align: center;
-  right: 50px;
-  margin-top: 150px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  opacity: 0.5;
-}
-
-#vaccine-info a :hover {
-  color: darkred;
-  background-color: rgb(245, 212, 219);
-  border-color: darkred;
-  opacity: 2;
-}
-
-#search-vacc-Input {
-  border: 1px solid black;
-  padding: 5px;
-  width: 380px;
-  border-radius: 10px;
-}
-
-#search-vacc-button {
-  text-transform: uppercase;
-  border: 1px solid black;
-  background-color:rgb(173, 121, 130);
-  padding: 5px;
-  border-radius: 10px;
-  width: 100px;
-  cursor: pointer;
-}
-
-#search-vacc-button:hover {
-  background-color:darkred;
 }
 
 #WHO-info {
