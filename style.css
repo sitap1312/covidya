@@ -190,8 +190,8 @@ footer a {
 }
 
 #covid-info button {
-  background: lightblue;
-  border: solid 2px dodgerblue;
+  background: rgb(245, 212, 219);
+  border: solid 2px darkred;
   height: 40px;
   font-size: medium;
   box-sizing:content-box;
@@ -200,7 +200,7 @@ footer a {
 }
 
 #covid-info button:hover {
-  background-color: dodgerblue;
+  background-color: rgb(180, 138, 138);
 }
 
 #WHO-info {
@@ -214,8 +214,8 @@ footer a {
 }
 
 #WHO-info button {
-  background: lightblue;
-  border: solid 2px dodgerblue;
+  background: rgb(245, 212, 219);
+  border: solid 2px darkred;
   height: 40px;
   font-size: medium;
   box-sizing:content-box;
@@ -224,7 +224,7 @@ footer a {
 }
 
 #WHO-info button:hover {
-  background-color: dodgerblue;
+  background-color: rgb(180, 138, 138);
 }
 
 /* class styling */
